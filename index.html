@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <script src="js/script.js" defer></script>
-    <title>Hotel Perseo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <script src="js/script.js" defer></script>
+  <title>Hotel Perseo</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo_header">
-                <a href="index.html"><img src="img/LogoPerseo.png" alt=""></a>
-        </div>
+  <header>
+    <div class="logo_header">
+      <a href="index.html"><img src="img/LogoPerseo.png" alt=""></a>
+    </div>
+    <nav>
+      <div class="nav-content">
+        <ul class="nav-links">
+          <li><a href="#" target="">RESERVAR</a></li>
+          <li><a href="#" target="">HABITACIONES</a></li>
+          <li><a href="#" target="">TIPOS DE SERVICIOS</a></li>
+          <li><a href="#" target="">ACERCA DE NOSOTROS</a></li>
+          <li><a href="#" target="">CONTÁCTENOS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <nav>
-            <div class="nav-content">
-              <ul class="nav-links">
-                <li><a href="#" target="">RESERVAR</a></li>
-                <li><a href="#" target="">OFERTAS</a></li>
-                <li><a href="#" target="">NUESTRAS MARCAS</a></li>
-                <li><a href="#" target="">ACERCA DE NOSOTROS</a></li>
-              </ul>
-            </div>
-        </nav>
 
-    </header>
-    
+  <div class="slider">
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="img/SENAHotelería.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/Bedroom.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/Lobby.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/Dinning.jpeg" alt="">
+      </div>
+
+    </div>
+
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Copyright © 2023 <b>Hotel Perseo</b> - Todos los Derechos Reservados.</p>
+  </footer>
+
 </body>
+
 </html>
