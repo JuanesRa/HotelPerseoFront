@@ -1,8 +1,17 @@
-var counter = 1;
-setInterval(function(){
-  document.getElementById('radio' + counter).checked = true;
-  counter++;
-  if(counter > 4){
-    counter = 1;
-  }
-}, 5000);
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   effect: "coverflow",
+   spaceBetween: 30,
+   grabCursor: true,
+   coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+});

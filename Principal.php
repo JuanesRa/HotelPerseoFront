@@ -1,32 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <script src="js/script.js" defer></script>
-    <title>Hotel Perseo</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Perseo</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="estilos/style.css">
+
 </head>
 <body>
-    <header>
-        <div class="logo_header">
-                <a href="index.html"><img src="img/LogoPerseo.png" alt=""></a>
-        </div>
 
-        <nav>
-            <div class="nav-content">
-              <ul class="nav-links">
-                <li><a href="#" target="">RESERVAR</a></li>
-                <li><a href="#" target="">OFERTAS</a></li>
-                <li><a href="#" target="">NUESTRAS MARCAS</a></li>
-                <li><a href="#" target="">ACERCA DE NOSOTROS</a></li>
-              </ul>
-            </div>
-        </nav>
+<section class="header">
 
-    </header>
-    
+   <div class="flex">
+      <a href="#" class="logo">Hotel Perseo</a>
+      <a href="#" class="btn">Revisar Disponibilidad</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#reservation">Reservaciones</a>
+      <a href="#">Contáctanos</a>
+      <a href="#">Acerca de Nosotros</a>
+   </nav>
+
+</section>
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="img/home-img-1.jpg" alt="">
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="img/home-img-2.jpg" alt="">
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="img/home-img-3.jpg" alt="">
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>Reserva ahora</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adultos <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adulto</option>
+               <option value="2">2 adultos</option>
+               <option value="3">3 adultos</option>
+               <option value="4">4 adultos</option>
+               <option value="5">5 adultos</option>
+               <option value="6">6 adultos</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Niños <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 niño</option>
+               <option value="1">1 niño</option>
+               <option value="2">2 niños</option>
+               <option value="3">3 niños</option>
+               <option value="4">4 niños</option>
+               <option value="5">5 niños</option>
+               <option value="6">6 niños</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Habitaciones <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Habitación</option>
+               <option value="2">2 Habitaciones</option>
+               <option value="3">3 Habitaciones</option>
+               <option value="4">4 Habitaciones</option>
+               <option value="5">5 Habitaciones</option>
+               <option value="6">6 Habitaciones</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Revisar Disponibilidad" name="check" class="btn">
+   </form>
+
+</section>
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="#"><i class="fas fa-phone"></i> +57-01800-0000</a>
+         <a href="#"><i class="fas fa-phone"></i> +57-01800-0001</a>
+         <a href="#"><i class="fas fa-envelope"></i> hotelPerseo@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Soacha, Cundinamarca - Colombia</a>
+      </div>
+
+      <div class="box">
+         <a href="#about">Servicios</a>
+         <a href="#reservation">Reservaciones</a>
+         <a href="#contact">Contáctanos</a>
+         <a href="#reviews">Acerca de Nosotros</a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; Copyright @ 2023 Hotel Perseo | Todos los derechos reservados</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
