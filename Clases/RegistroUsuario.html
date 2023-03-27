@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="../estilos/style_login.css">
+    <link rel="stylesheet" href="../estilos/style_signup.css">
 
 </head>
 
@@ -32,37 +32,43 @@
     </section>
 
 
-    <div class="login">
-        <span class="title">Inicio de Sesión</span>
+    <div class="signup">
+        <span class="title">Registro</span>
 
         <form action="#">
+            <div class="input-field">
+                <input type="text" placeholder="Ingrese su nombre" required>
+                <i class="uil uil-user"></i>
+            </div>
             <div class="input-field">
                 <input type="text" placeholder="Ingresa tu email" required>
                 <i class="uil uil-envelope icon"></i>
             </div>
             <div class="input-field">
-                <input type="password" class="password" placeholder="Ingresa tu contraseña" required>
+                <input type="password" class="password" placeholder="Crea una contraseña" required>
+                <i class="uil uil-lock icon"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" class="password" placeholder="Confirma la contraseña" required>
                 <i class="uil uil-lock icon"></i>
                 <i class="uil uil-eye-slash showHidePw"></i>
             </div>
 
             <div class="checkbox-text">
                 <div class="checkbox-content">
-                    <input type="checkbox" id="logCheck">
-                    <label for="logCheck" class="text">Recuérdame</label>
+                    <input type="checkbox" id="termCon">
+                    <label for="termCon" class="text">Acepto todos los terminos y condiciones</label>
                 </div>
-                
-                <a href="#" class="text">Olvidé mi contraseña</a>
             </div>
 
             <div class="input-field button">
-                <input type="button" value="Login">
+                <input type="button" value="Regístrate">
             </div>
         </form>
 
         <div class="login-signup">
-            <span class="text">¿No tienes una cuenta?
-                <a href="RegistroUsuario.html" class="text signup-link">Regístrate</a>
+            <span class="text">¿Ya tienes una cuenta?
+                <a href="Login.html" class="text login-link">Inicia Sesión</a>
             </span>
         </div>
     </div>

@@ -105,85 +105,129 @@ section{
    FORMULARIO
 */
 
-.container {
-   display: flex;
-   width: 1160px;
-   height: 550px;
+.login{
    margin: auto;
    margin-top: 30px;
-   background-color: var(--white);
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
- }
-
- .container form{
-   margin: auto;
    width: 400px;
  }
- 
- .title {
-   font-size: 24px;
-   margin-bottom: 70px;
-   text-align: center;
-   color: var(--black);
- }
- 
- input[type="text"] {
+
+.login .title{
+   position: relative;
+   font-size: 22px;
+   font-weight: 600;
+}
+
+.login .title::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 30px;
+   background-color: var(--green);
+   border-radius: 25px;
+}
+
+.login .input-field{
+   position: relative;
+   height: 50px;
    width: 100%;
-   padding: 10px;
-   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.input-field input{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   padding: 0 35px;
    border: none;
-   border-bottom: var(--border);
+   outline: none;
    font-size: 16px;
- }
- 
- input[type="text"]:focus {
+   border-bottom: 2px solid #ccc;
+   border-top: 2px solid transparent;
+   transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
    border-bottom-color: var(--green);
- }
- 
- .btn{
-   display: block;
-   width: 100%;
+}
+
+.input-field i{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #999;
+   font-size: 23px;
+   transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+   color: var(--green);
+}
+
+.input-field i.icon{
+   left: 0;
+}
+.input-field i.showHidePw{
+   right: 0;
    cursor: pointer;
    padding: 10px;
-   border: var(--border);
-   font-size: 1.8rem;
-   color: var(--green);
-   text-align: center;
-   text-transform: capitalize;
-   transition: .2s linear;
-   margin-top: 1rem;
-   background-color: var(--white);
 }
 
-.btn:hover{
-   border-radius: 5rem;
-   background-color: var(--green);
-   color: var(--white);
-}
- 
- .txt {
+.login .checkbox-text{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    margin-top: 20px;
-   text-align: center;
- }
- 
- .txt a {
-   color: var(--gray);
-   text-decoration: none;
- }
- 
- .txt a:hover {
-   text-decoration: underline;
-   color: var(--green);
- }
- 
- .txt p {
-   margin-top: 10px;
-   font-size: 14px;
- }
+}
 
- .txt p a:hover {
+.checkbox-text .checkbox-content{
+   display: flex;
+   align-items: center;
+}
+
+.checkbox-content input{
+   margin-right: 10px;
+   accent-color: var(--green);
+}
+
+.login .text{
+   color: var(--black);
+   font-size: 14px;
+}
+
+.login a.text{
    color: var(--green);
- }
+   text-decoration: none;
+}
+.login a:hover{
+   text-decoration: underline;
+}
+
+.login .button{
+   margin-top: 35px;
+}
+
+.login .button input{
+   border: none;
+   color: var(--black);
+   font-size: 17px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   border-radius: 6px;
+   background-color: var(--green);
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.button input:hover{
+   background-color: #5eb319d8;
+}
+
+.login .login-signup{
+   margin-top: 30px;
+   text-align: center;
+}
  
 
 .footer .box-container{
