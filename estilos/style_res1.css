@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #333333;
+    --green: #5eb319;
+    --gray: #707070;
+    --border: .1rem solid rgba(84, 134, 80, 0.7);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 5rem;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    background-color: var(--white);
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    border: var(--border);
+    font-size: 1.8rem;
+    color: var(--green);
+    text-align: center;
+    text-transform: capitalize;
+    transition: .2s linear;
+    margin-top: 1rem;
+    background-color: var(--white);
+    margin: auto;
+    margin-left: 250px;
+}
+
+.btn:hover {
+    border-radius: 5rem;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+
+
+.header {
+    padding-bottom: 0;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header .flex .logo {
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.header .flex .btn {
+    margin-top: 0;
+}
+
+.header .flex .fa-bars {
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--green);
+    display: none;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--green);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.header .navbar a {
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.header .navbar a:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #707070;
+    padding: 0 10px 0 10px;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 15px;
+    color: var(--white);
+    padding: 7px;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--green);
+}
+
+.footer .box-container .box:last-child {
+    text-align: right;
+}
+
+.footer .credit {
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 12px;
+}
+
+.centro {
+    height: 600px;
+    max-width: 1159px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+}
+
+
+.centro .cab_der {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: .5rem;
+
+
+}
+
+.centro .cab_der {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background-color: var(--white);
+    border-radius: .5rem;
+    display: flex;
+
+}
+
+.centro .cab_der .cabecera {
+    width: 98%;
+    height: 90%;
+    background-color: var(--white);
+    display: flex;
+    border: var(--border);
+    margin: 10px;
+}
+
+.centro .cab_der .cabecera .img_hab {
+    width: 15%;
+    height: 60%;
+    background-color: rgb(255, 230, 0);
+    margin: 26px;
+    margin-left: 10px;
+}
+
+
+.centro .cab_der .img_hab img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.centro .cab_der .cabecera .descripcion {
+    width: 80%;
+    height: 60%;
+    background-color: var(--white);
+    margin: auto;
+    font-size: 16px;
+    border: var(--border);
+    margin-top: 26px;
+    padding: 5px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.centro .cabe_infe {
+    width: 98%;
+    height: 62%;
+    background-color: var(--white);
+    margin: auto;
+    display: flex;
+    border: var(--border);
+
+}
+
+.centro .cabe_infe .form1 {
+    width: 49%;
+    height: 98%;
+    background-color: var(--white);
+    margin-top: 3px;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.centro .cabe_infe .form1 .primero {
+
+    padding: 2px;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+
+.centro .cabe_infe .form1 .primero .c {
+    width: 60%;
+    padding-top: 6px;
+    margin-bottom: 30px;
+    border: var(--border);
+
+
+}
+
+
+.centro .cabe_infe .form2 {
+    width: 49%;
+    height: 98%;
+    background-color: var(--white);
+    margin-top: 3px;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    font-size: 10px;
+    padding-top: 41px;
+}
+
+.centro .cabe_infe .form2 .segundo {
+
+    padding: 2px;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.centro .cabe_infe .form2 .segundo .c {
+    width: 60%;
+    padding-top: 6px;
+    margin-bottom: 30px;
+    border: var(--border);
+    color: black;
+}
+
+.centro .cabe_infe .form2 .segundo .d {
+    color: black;
+    font-size: 10px;
+
+}
+
+.d a {
+
+    color: black;
+    border: var(--border);
+    padding: 2px;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    margin-left: 200px;
+
+}
